@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-300 min-h-screen">
+    <h1 class="text-3xl font-bold text-blue-600">Weather Report</h1>
+    <ul class="list-none space-y-2">
+        {% for item in weather_data %}
+            <li class="bg-white p-4 rounded shadow hover:shadow-lg hover:scale-105 transition">{{ item }}</li>
+        {% endfor %}    
+    </ul>
+</body>
+</html>
